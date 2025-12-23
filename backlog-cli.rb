@@ -5,20 +5,20 @@
 class BacklogCli < Formula
   desc "CLI for Backlog project management"
   homepage "https://github.com/yacchi/backlog-cli"
-  version "0.1.1"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yacchi/backlog-cli/releases/download/v0.1.1/backlog-cli_0.1.1_darwin_amd64.tar.gz"
-      sha256 "6f83fb512a7d1c24b7702c99a286a38b9683f51ad93c676f2857927d168e6b3c"
+      url "https://github.com/yacchi/backlog-cli/releases/download/v0.2.1/backlog-cli_0.2.1_darwin_amd64.tar.gz"
+      sha256 "1edc9906c262873b932813193fb87fd3cbc1a84060e35986f1a96d20b9b9f54d"
 
       def install
         bin.install "backlog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yacchi/backlog-cli/releases/download/v0.1.1/backlog-cli_0.1.1_darwin_arm64.tar.gz"
-      sha256 "eecae5ff80b79ca881a3501813ed36ccff0cac9513ddb78c528cb2ad563c2af6"
+      url "https://github.com/yacchi/backlog-cli/releases/download/v0.2.1/backlog-cli_0.2.1_darwin_arm64.tar.gz"
+      sha256 "0e93eb57e0d32e6faf283cd46de18390dfed7e5644e9633f1380c19d3421354f"
 
       def install
         bin.install "backlog"
@@ -28,15 +28,15 @@ class BacklogCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yacchi/backlog-cli/releases/download/v0.1.1/backlog-cli_0.1.1_linux_amd64.tar.gz"
-      sha256 "66db878a329d3cadf8f6e78c31052a249d0f79b3c957f58b7880d1f9465a2026"
+      url "https://github.com/yacchi/backlog-cli/releases/download/v0.2.1/backlog-cli_0.2.1_linux_amd64.tar.gz"
+      sha256 "80da835220ee2ac4a2688057904045ad975962a7dc67178f278707eb342a6096"
       def install
         bin.install "backlog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yacchi/backlog-cli/releases/download/v0.1.1/backlog-cli_0.1.1_linux_arm64.tar.gz"
-      sha256 "a4877403b902c0befa2591dc164b7c9781bad74558c4c8e9ca6f7f6a8e421e80"
+      url "https://github.com/yacchi/backlog-cli/releases/download/v0.2.1/backlog-cli_0.2.1_linux_arm64.tar.gz"
+      sha256 "dc7027922fe93beaba44c24c69a9d12e2edbd747895d568540bd9aa82eaa199a"
       def install
         bin.install "backlog"
       end
