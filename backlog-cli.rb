@@ -5,20 +5,20 @@
 class BacklogCli < Formula
   desc "CLI for Backlog project management"
   homepage "https://github.com/yacchi/backlog-cli"
-  version "0.17.1"
+  version "0.18.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yacchi/backlog-cli/releases/download/v0.17.1/backlog-cli_0.17.1_darwin_amd64.tar.gz"
-      sha256 "480365b69a145d15fd3aa6a6c5a4549fdd3b1b257fa41caa3355f447715a16ea"
+      url "https://github.com/yacchi/backlog-cli/releases/download/v0.18.0/backlog-cli_0.18.0_darwin_amd64.tar.gz"
+      sha256 "bfe9316c913388512a2d6cfc7fde982f8fab108189fe4cee612186e3e12839c2"
 
       define_method(:install) do
         bin.install "backlog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yacchi/backlog-cli/releases/download/v0.17.1/backlog-cli_0.17.1_darwin_arm64.tar.gz"
-      sha256 "dbe8269b410785aab8cf9beb507496822d81b8a1bf1f967835b5a4b475b5fb51"
+      url "https://github.com/yacchi/backlog-cli/releases/download/v0.18.0/backlog-cli_0.18.0_darwin_arm64.tar.gz"
+      sha256 "5c272013e4b251b3ede91e6b53e298243b4dca6d18a01dd6402112f5b751e4fa"
 
       define_method(:install) do
         bin.install "backlog"
@@ -28,15 +28,15 @@ class BacklogCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yacchi/backlog-cli/releases/download/v0.17.1/backlog-cli_0.17.1_linux_amd64.tar.gz"
-      sha256 "b406e3f260ecd7851e453712218dd3074c34a4298505213372fcc27e462cd3d2"
+      url "https://github.com/yacchi/backlog-cli/releases/download/v0.18.0/backlog-cli_0.18.0_linux_amd64.tar.gz"
+      sha256 "2bb8c3c2caf1402f5b7d18f837b6850c3f137482a59f0344a21eb30f9b0b9022"
       define_method(:install) do
         bin.install "backlog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yacchi/backlog-cli/releases/download/v0.17.1/backlog-cli_0.17.1_linux_arm64.tar.gz"
-      sha256 "ad0eb0440485ceebe82d06cccd9aecde42c6a1fe79e648fb38dfe01704483a17"
+      url "https://github.com/yacchi/backlog-cli/releases/download/v0.18.0/backlog-cli_0.18.0_linux_arm64.tar.gz"
+      sha256 "6da2ddf49cda5fe5c74794c09a457f954420e88fea5f83d1bcc222822e804f40"
       define_method(:install) do
         bin.install "backlog"
       end
