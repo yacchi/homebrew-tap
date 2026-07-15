@@ -10,7 +10,7 @@ class Statusloom < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yacchi/statusloom/releases/download/v0.0.1/statusloom_0.0.1_darwin_amd64.tar.gz"
-      sha256 "086bcb1e936fba064bac44906fdd89480ff3c1b5ad06d0f0a31841e86410ffe4"
+      sha256 "c45196bf36b8047070d6d42aeb306d2eb69508ab65d7b515e697c4fb4d2215c8"
 
       define_method(:install) do
         bin.install "statusloom"
@@ -18,7 +18,7 @@ class Statusloom < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yacchi/statusloom/releases/download/v0.0.1/statusloom_0.0.1_darwin_arm64.tar.gz"
-      sha256 "ace899febc4de162a50b1179f8caf14570d218d5d6fa612e41e5789debdae1db"
+      sha256 "d7911c0a8b66e5d6ae9a1816507d2c4bd60f4847558d6dd6bb8d29e57947ffb8"
 
       define_method(:install) do
         bin.install "statusloom"
@@ -29,14 +29,14 @@ class Statusloom < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yacchi/statusloom/releases/download/v0.0.1/statusloom_0.0.1_linux_amd64.tar.gz"
-      sha256 "dedc17aa9cb87d0e9a4993179b469386b6642646d5e57b848fec8d3b0928db7b"
+      sha256 "3b668ab497ceb7da21ea115c54153e552a7e2696eff32b025a6cf4d77171b0fa"
       define_method(:install) do
         bin.install "statusloom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yacchi/statusloom/releases/download/v0.0.1/statusloom_0.0.1_linux_arm64.tar.gz"
-      sha256 "64de20a0ff0614113e16ce95838d81c4b529b38a94d5abab7fe43efa603a9b49"
+      sha256 "0ce810946ec62ccd992ffaece1c25fb4cdb83ec35447954a10a28e67753643ad"
       define_method(:install) do
         bin.install "statusloom"
       end
