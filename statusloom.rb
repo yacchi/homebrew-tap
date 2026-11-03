@@ -5,20 +5,20 @@
 class Statusloom < Formula
   desc "Statusline tool for Claude Code and other coding agents"
   homepage "https://github.com/yacchi/statusloom"
-  version "0.0.9"
+  version "0.0.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yacchi/statusloom/releases/download/v0.0.9/statusloom_0.0.9_darwin_amd64.tar.gz"
-      sha256 "c3c201fa110e86011b6f3e0e9b5949647823bad2839c5e2d5b8b19985542feaf"
+      url "https://github.com/yacchi/statusloom/releases/download/v0.0.10/statusloom_0.0.10_darwin_amd64.tar.gz"
+      sha256 "2830f1ab495b9924de00f6fbcbc04004cc512e8963b1705d5a457bf54c2ef6b2"
 
       define_method(:install) do
         bin.install "statusloom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yacchi/statusloom/releases/download/v0.0.9/statusloom_0.0.9_darwin_arm64.tar.gz"
-      sha256 "f7baff07740981b7e5d68a74909232682e2e1d07c01909aa79053422306f9cea"
+      url "https://github.com/yacchi/statusloom/releases/download/v0.0.10/statusloom_0.0.10_darwin_arm64.tar.gz"
+      sha256 "823babe544f7c366c1fe1598ab9f8283c6a95fe6097c6d6d5b7cf103f207cbdb"
 
       define_method(:install) do
         bin.install "statusloom"
@@ -28,15 +28,15 @@ class Statusloom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yacchi/statusloom/releases/download/v0.0.9/statusloom_0.0.9_linux_amd64.tar.gz"
-      sha256 "d90b8f290ca56e38db855ebebb563b9e8c71f3f5102f6f6f6e97df394a6d94f2"
+      url "https://github.com/yacchi/statusloom/releases/download/v0.0.10/statusloom_0.0.10_linux_amd64.tar.gz"
+      sha256 "c43bcb07aac801fed2da5a20f0dd8d090d34982f8bb900d4676064a910771e09"
       define_method(:install) do
         bin.install "statusloom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yacchi/statusloom/releases/download/v0.0.9/statusloom_0.0.9_linux_arm64.tar.gz"
-      sha256 "99d50eb179bdb3adde8c2ffe36200bf43edc1d16f4dc0a666a369f8d7de7b385"
+      url "https://github.com/yacchi/statusloom/releases/download/v0.0.10/statusloom_0.0.10_linux_arm64.tar.gz"
+      sha256 "903209f0541c230ec43ff07a2b0814451f86a04cbc4a9bdb4affbbeb40b10fae"
       define_method(:install) do
         bin.install "statusloom"
       end
